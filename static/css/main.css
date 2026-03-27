@@ -4,10 +4,7 @@
    precise. Every pixel deliberate.
    ========================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Editorial+New:ital,wght@0,400;0,700;1,400&display=swap');
-
-/* Fallback stack: if Google Fonts is blocked */
-/* We use system stacks as fallback */
+/* Fonts loaded via baseof.html: DM Serif Display + DM Mono (Google Fonts) */
 
 :root {
   --black:   #0a0a0a;
@@ -16,7 +13,7 @@
   --accent:  #0a0a0a; /* No color — conviction */
   --rule:    #d8d5cf;
 
-  --font-display: 'PP Editorial New', 'Playfair Display', Georgia, serif;
+  --font-display: 'DM Serif Display', Georgia, serif;
   --font-mono:    'DM Mono', 'Courier New', monospace;
 
   --space-xs:  0.5rem;
@@ -763,7 +760,7 @@ footer .tagline {
 /* Lijst */
 .posts-index {
   padding: var(--space-2xl) var(--space-md) var(--space-xl);
-  max-width: 860px;
+  max-width: var(--max-w);
 }
 
 .posts-header {
@@ -833,7 +830,7 @@ footer .tagline {
 
 /* Artikel */
 .post {
-  max-width: 680px;
+  max-width: 900px;
   margin: 0 auto;
   padding: var(--space-2xl) var(--space-md) var(--space-xl);
 }

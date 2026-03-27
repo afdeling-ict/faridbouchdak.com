@@ -19,7 +19,7 @@
     <div class="post-rule"></div>
     <div class="post-footer-inner">
       <a href="/posts/" class="post-back">← Alle notities</a>
-      <a href="/en{{ .RelPermalink }}" class="post-lang-switch">Read in English →</a>
+      {{ with .Params.en_url }}<a href="{{ . }}" class="post-lang-switch">Read in English →</a>{{ end }}
     </div>
   </footer>
 
