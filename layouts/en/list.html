@@ -130,6 +130,27 @@
     </div>
   </section>
 
+  <!-- ============ NOTES ============ -->
+  {{ $posts := where .Site.RegularPages "Section" "posts" }}
+  {{ if $posts }}
+  <section class="notes-preview">
+    <div class="notes-header">
+      <span class="section-label">Notes</span>
+      <a href="/en/posts/" class="notes-all">All notes →</a>
+    </div>
+    <div class="notes-list">
+      {{ range first 3 $posts }}
+      <a href="{{ .RelPermalink }}" class="notes-item animate scroll-reveal">
+        <span class="notes-date">{{ .Date.Format "02.01.2006" }}</span>
+        <span class="notes-title">{{ .Title }}</span>
+        <span class="arrow">→</span>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+
   <section class="contact" id="contact">
     <h2 class="contact-headline animate scroll-reveal">
       Let's<br>

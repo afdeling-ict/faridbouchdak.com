@@ -126,6 +126,27 @@
 </section>
 
 
+<!-- ============ NOTITIES ============ -->
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ if $posts }}
+<section class="notes-preview">
+  <div class="notes-header">
+    <span class="section-label">Notities</span>
+    <a href="/posts/" class="notes-all">Alle notities →</a>
+  </div>
+  <div class="notes-list">
+    {{ range first 3 $posts }}
+    <a href="{{ .RelPermalink }}" class="notes-item animate scroll-reveal">
+      <span class="notes-date">{{ .Date.Format "02.01.2006" }}</span>
+      <span class="notes-title">{{ .Title }}</span>
+      <span class="arrow">→</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+
+
 <!-- ============ CONTACT ============ -->
 <section class="contact" id="contact">
   <h2 class="contact-headline animate scroll-reveal">

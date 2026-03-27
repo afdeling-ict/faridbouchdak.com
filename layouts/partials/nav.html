@@ -1,9 +1,9 @@
 <nav id="main-nav">
   <a href="{{ if eq .Language.Lang "en" }}/en/{{ else }}/{{ end }}" class="nav-logo">FB</a>
   <ul class="nav-links">
-    <li><a href="#{{ i18n "projects_anchor" }}">{{ i18n "projects" }}</a></li>
+    <li><a href="{{ if eq .Language.Lang "en" }}/en/{{ else }}/{{ end }}#{{ i18n "projects_anchor" }}">{{ i18n "projects" }}</a></li>
     <li><a href="{{ if eq .Language.Lang "en" }}/en/posts/{{ else }}/posts/{{ end }}">{{ i18n "notes" }}</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="{{ if eq .Language.Lang "en" }}/en/{{ else }}/{{ end }}#contact">Contact</a></li>
     <li><a href="https://p3nomads.com" target="_blank" rel="noopener">P3nomads ↗</a></li>
     <li class="nav-lang">
       {{ with .Translations }}
