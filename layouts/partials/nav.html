@@ -1,10 +1,16 @@
 <nav id="main-nav">
-  <a href="/" class="nav-logo">FB</a>
+  <a href="{{ if eq .Language.Lang "en" }}/en/{{ else }}/{{ end }}" class="nav-logo">FB</a>
   <ul class="nav-links">
-    <li><a href="#projecten">Projecten</a></li>
-    <li><a href="/posts/">Notities</a></li>
+    <li><a href="#{{ i18n "projects_anchor" }}">{{ i18n "projects" }}</a></li>
+    <li><a href="{{ if eq .Language.Lang "en" }}/en/posts/{{ else }}/posts/{{ end }}">{{ i18n "notes" }}</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="https://p3nomads.com" target="_blank" rel="noopener">P3nomads ↗</a></li>
-    <li class="nav-lang"><a href="/en/">EN</a></li>
+    <li class="nav-lang">
+      {{ with .Translations }}
+        {{ range . }}<a href="{{ .RelPermalink }}">{{ upper .Language.Lang }}</a>{{ end }}
+      {{ else }}
+        {{ if eq $.Language.Lang "en" }}<a href="/">NL</a>{{ else }}<a href="/en/">EN</a>{{ end }}
+      {{ end }}
+    </li>
   </ul>
 </nav>

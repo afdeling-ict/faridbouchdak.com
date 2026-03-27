@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-{{ if hasPrefix .RelPermalink "/en" }}
-<html lang="en" dir="ltr">
-{{ else }}
-<html lang="nl" dir="ltr">
-{{ end }}
+<html lang="{{ .Language.Lang }}" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,19 +18,11 @@
   <title>{{ if .Title }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title>
 </head>
 <body>
-  {{ if hasPrefix .RelPermalink "/en" }}
-    {{ partial "nav-en.html" . }}
-  {{ else }}
-    {{ partial "nav.html" . }}
-  {{ end }}
+  {{ partial "nav.html" . }}
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-  {{ if hasPrefix .RelPermalink "/en" }}
-    {{ partial "footer-en.html" . }}
-  {{ else }}
-    {{ partial "footer.html" . }}
-  {{ end }}
+  {{ partial "footer.html" . }}
   {{ partial "scripts.html" . }}
 </body>
 </html>

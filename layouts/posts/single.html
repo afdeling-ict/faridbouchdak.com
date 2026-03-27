@@ -3,7 +3,7 @@
 
   <header class="post-header">
     <div class="post-meta-top">
-      <a href="/posts/" class="post-back">← Notities</a>
+      <a href="{{ if eq .Language.Lang "en" }}/en/posts/{{ else }}/posts/{{ end }}" class="post-back">← {{ i18n "notes" }}</a>
       <span class="post-date">{{ .Date.Format "02.01.2006" }}</span>
     </div>
     <h1 class="post-title">{{ .Title }}</h1>
@@ -18,8 +18,10 @@
   <footer class="post-footer">
     <div class="post-rule"></div>
     <div class="post-footer-inner">
-      <a href="/posts/" class="post-back">← Alle notities</a>
-      {{ with .Params.en_url }}<a href="{{ . }}" class="post-lang-switch">Read in English →</a>{{ end }}
+      <a href="{{ if eq .Language.Lang "en" }}/en/posts/{{ else }}/posts/{{ end }}" class="post-back">← {{ i18n "all_notes" }}</a>
+      {{ range .Translations }}
+      <a href="{{ .RelPermalink }}" class="post-lang-switch">{{ i18n "read_translation" }}</a>
+      {{ end }}
     </div>
   </footer>
 

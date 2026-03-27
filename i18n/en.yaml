@@ -1,0 +1,12 @@
+- id: notes
+  translation: "Notes"
+- id: all_notes
+  translation: "All notes"
+- id: projects
+  translation: "Projects"
+- id: projects_anchor
+  translation: "projects"
+- id: read_translation
+  translation: "Lees in het Nederlands →"
+- id: tagline
+  translation: "Building infrastructure, physical and digital."

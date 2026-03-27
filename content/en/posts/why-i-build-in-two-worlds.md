@@ -3,8 +3,7 @@ title: "Why I build in two worlds"
 date: 2026-03-27
 description: "Physical infrastructure and digital products seem like completely different worlds. They are not."
 slug: "why-i-build-in-two-worlds"
-lang: "en"
-nl_url: "/posts/waarom-ik-twee-werelden-bouw/"
+translationKey: "two-worlds"
 ---
 
 There is a moment when you realize that everything you do is actually the same thing.

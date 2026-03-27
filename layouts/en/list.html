@@ -18,7 +18,7 @@
 </head>
 <body>
 
-{{ partial "nav-en.html" . }}
+{{ partial "nav.html" . }}
 
 <main>
 
@@ -153,10 +153,7 @@
 
 </main>
 
-<footer>
-  <span class="copy">© {{ now.Year }} Farid Bouchdak</span>
-  <span class="tagline">Building infrastructure, physical and digital.</span>
-</footer>
+{{ partial "footer.html" . }}
 
 {{ partial "scripts.html" . }}
 

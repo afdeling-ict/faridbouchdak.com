@@ -1,10 +1,28 @@
 baseURL = "https://faridbouchdak.com"
-languageCode = "nl"
-title = "Farid Bouchdak"
+defaultContentLanguage = "nl"
+defaultContentLanguageInSubdir = false
 
 [params]
-  description = "Ik bouw infrastructuur. Fysiek en digitaal."
   author = "Farid Bouchdak"
+
+[languages]
+  [languages.nl]
+    languageCode = "nl"
+    languageName = "Nederlands"
+    title = "Farid Bouchdak"
+    contentDir = "content/nl"
+    weight = 1
+    [languages.nl.params]
+      description = "Ik bouw infrastructuur. Fysiek en digitaal."
+
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    title = "Farid Bouchdak"
+    contentDir = "content/en"
+    weight = 2
+    [languages.en.params]
+      description = "I build infrastructure. Physical and digital."
 
 [markup]
   [markup.goldmark]

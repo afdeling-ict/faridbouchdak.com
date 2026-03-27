@@ -3,7 +3,7 @@ title: "Waarom ik twee werelden bouw"
 date: 2026-03-27
 description: "Fysieke infrastructuur en digitale producten lijken werelden apart. Dat zijn ze niet."
 slug: "waarom-ik-twee-werelden-bouw"
-en_url: "/en/posts/why-i-build-in-two-worlds/"
+translationKey: "two-worlds"
 ---
 
 Er is een moment waarop je beseft dat alles wat je doet eigenlijk hetzelfde is.

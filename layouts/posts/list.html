@@ -3,10 +3,10 @@
 
   <div class="posts-header">
     <div class="posts-header-left">
-      <a href="/" class="post-back">← Home</a>
+      <a href="{{ if eq .Language.Lang "en" }}/en/{{ else }}/{{ end }}" class="post-back">← Home</a>
     </div>
     <div class="posts-header-right">
-      <span class="section-label">Notities</span>
+      <span class="section-label">{{ i18n "notes" }}</span>
       <span class="section-count">{{ len .Pages | printf "%02d" }}</span>
     </div>
   </div>
@@ -14,7 +14,7 @@
   <div class="posts-list">
     {{ range .Pages }}
     <a href="{{ .RelPermalink }}" class="posts-item">
-      <span class="posts-item-date">{{ .Date.Format "02.01.06" }}</span>
+      <span class="posts-item-date">{{ .Date.Format "02.01.2006" }}</span>
       <span class="posts-item-title">{{ .Title }}</span>
       <span class="posts-item-arrow">→</span>
     </a>

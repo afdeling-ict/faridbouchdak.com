@@ -31,32 +31,33 @@ Dit is een persoonlijk merkproject voor Farid Bouchdak. De centrale positionerin
 
 ```
 faridbouchdak/
-├── config.toml
+├── config.toml                            # Hugo multilingual config ([languages.nl] + [languages.en])
+├── i18n/
+│   ├── nl.yaml                            # UI-strings NL (Notities, Projecten, etc.)
+│   └── en.yaml                            # UI-strings EN (Notes, Projects, etc.)
 ├── content/
-│   ├── _index.md                          # Homepage NL
-│   ├── posts/
-│   │   └── waarom-ik-twee-werelden-bouw.md
-│   └── en/
-│       ├── _index.md                      # Homepage EN
+│   ├── nl/                                # contentDir voor NL (default taal)
+│   │   ├── _index.md
+│   │   └── posts/
+│   │       └── waarom-ik-twee-werelden-bouw.md   # translationKey: "two-worlds"
+│   └── en/                                # contentDir voor EN
+│       ├── _index.md
 │       └── posts/
-│           └── why-i-build-in-two-worlds.md
+│           └── why-i-build-in-two-worlds.md      # translationKey: "two-worlds"
 ├── layouts/
 │   ├── index.html                         # Homepage NL template
 │   ├── _default/
-│   │   ├── baseof.html                    # HTML wrapper + scroll JS
+│   │   ├── baseof.html                    # HTML wrapper — taal via .Language.Lang
 │   │   └── single.html                   # Fallback single pagina
 │   ├── posts/
-│   │   ├── list.html                      # Blogoverzicht NL
-│   │   └── single.html                   # Artikelpagina NL
+│   │   ├── list.html                      # Blogoverzicht NL + EN (één template, i18n)
+│   │   └── single.html                   # Artikelpagina NL + EN (één template, i18n + .Translations)
 │   ├── en/
-│   │   ├── list.html                      # Homepage EN (standalone HTML)
-│   │   └── posts/
-│   │       ├── list.html                  # Blogoverzicht EN
-│   │       └── single.html               # Artikelpagina EN
+│   │   └── list.html                      # Homepage EN (standalone HTML)
 │   └── partials/
-│       ├── nav.html                       # Nav NL
-│       ├── nav-en.html                    # Nav EN
-│       └── footer.html
+│       ├── nav.html                       # Nav NL + EN (één partial, taaldetectie + .Translations)
+│       ├── footer.html                    # Footer NL + EN (i18n tagline)
+│       └── scripts.html                   # Scroll + animatie JS
 └── static/
     ├── css/main.css
     └── img/fb-logo.png
@@ -89,9 +90,17 @@ faridbouchdak/
 
 ---
 
+## Nieuwe post toevoegen (werkwijze na multilingual migratie)
+
+1. Maak `content/nl/posts/[slug-nl].md` aan met `translationKey: "[unieke-key]"`
+2. Maak `content/en/posts/[slug-en].md` aan met dezelfde `translationKey`
+3. Hugo koppelt vertalingen automatisch — taalwisselknop in nav en post-footer werkt zonder extra configuratie
+
+---
+
 ## Openstaande taken
 
-1. **Volgende blogpost** schrijven — systeem staat klaar, alleen nieuw `.md` bestand toevoegen aan `content/posts/` en `content/en/posts/`
+1. **Volgende blogpost** schrijven — `content/nl/posts/` + `content/en/posts/`, zelfde `translationKey`
 2. **Homepage updaten** met "Notities" sectie of recente post preview
 3. **stickynotes.club** — domein correct ingesteld op de site
 4. **askfoundersanything.com** beslissing nemen: bouwen of verkopen
