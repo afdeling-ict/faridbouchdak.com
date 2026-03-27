@@ -1,0 +1,500 @@
+/* =========================================
+   FARIDBOUCHDAK.COM — MAIN STYLESHEET
+   Inspired by Work.co: stark, typographic,
+   precise. Every pixel deliberate.
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Editorial+New:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Fallback stack: if Google Fonts is blocked */
+/* We use system stacks as fallback */
+
+:root {
+  --black:   #0a0a0a;
+  --white:   #f5f4f0;
+  --mid:     #6b6b6b;
+  --accent:  #0a0a0a; /* No color — conviction */
+  --rule:    #d8d5cf;
+
+  --font-display: 'PP Editorial New', 'Playfair Display', Georgia, serif;
+  --font-mono:    'DM Mono', 'Courier New', monospace;
+
+  --space-xs:  0.5rem;
+  --space-sm:  1rem;
+  --space-md:  2rem;
+  --space-lg:  4rem;
+  --space-xl:  8rem;
+  --space-2xl: 14rem;
+
+  --max-w: 1200px;
+  --col:   calc((var(--max-w) - 2 * var(--space-md)) / 12);
+}
+
+/* ---- RESET ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  cursor: crosshair;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img { display: block; max-width: 100%; }
+
+/* ---- CURSOR ---- */
+a, button { cursor: crosshair; }
+
+/* ---- CUSTOM SCROLLBAR ---- */
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: var(--white); }
+::-webkit-scrollbar-thumb { background: var(--black); }
+
+/* =========================================
+   LAYOUT
+   ========================================= */
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+/* =========================================
+   NAV
+   ========================================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: var(--space-sm) var(--space-md);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: multiply;
+}
+
+.nav-logo {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--black);
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.nav-logo:hover { opacity: 1; }
+
+.nav-links {
+  display: flex;
+  gap: var(--space-md);
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--black); }
+
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-index {
+  position: absolute;
+  top: var(--space-xl);
+  right: var(--space-md);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+  writing-mode: vertical-lr;
+}
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  max-width: 10ch;
+  margin-bottom: var(--space-lg);
+}
+
+.hero-headline em {
+  font-style: italic;
+  color: var(--mid);
+}
+
+.hero-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-md);
+  border-top: 1px solid var(--rule);
+  padding-top: var(--space-md);
+}
+
+.hero-meta-item {}
+
+.hero-meta-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+  margin-bottom: var(--space-xs);
+}
+
+.hero-meta-value {
+  font-size: 0.875rem;
+  color: var(--black);
+}
+
+/* =========================================
+   ABOUT / STATEMENT
+   ========================================= */
+
+.statement {
+  padding: var(--space-xl) var(--space-md);
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.statement-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+  padding-top: 0.4rem;
+}
+
+.statement-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.statement-text strong {
+  font-weight: 700;
+}
+
+/* =========================================
+   PROJECTS / PORTFOLIO
+   ========================================= */
+
+.projects {
+  padding: var(--space-xl) var(--space-md);
+  border-bottom: 1px solid var(--rule);
+}
+
+.projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-lg);
+}
+
+.section-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+.section-count {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+}
+
+.project-list {}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 3rem 1fr auto;
+  gap: var(--space-md);
+  align-items: baseline;
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--rule);
+  text-decoration: none;
+  color: var(--black);
+  transition: background 0.15s;
+  position: relative;
+}
+
+.project-item:hover .project-name {
+  transform: translateX(8px);
+}
+
+.project-num {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+}
+
+.project-name {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  transition: transform 0.2s ease;
+}
+
+.project-meta {
+  text-align: right;
+}
+
+.project-domain {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+  display: block;
+}
+
+.project-status {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  display: block;
+  margin-top: 2px;
+}
+
+.project-status.active {
+  color: var(--black);
+}
+
+/* =========================================
+   STATS STRIP
+   ========================================= */
+
+.stats {
+  padding: var(--space-lg) var(--space-md);
+  border-bottom: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.stat {}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+.contact {
+  padding: var(--space-xl) var(--space-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: end;
+  min-height: 40vh;
+}
+
+.contact-headline {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+.contact-headline a {
+  border-bottom: 2px solid var(--black);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.contact-headline a:hover {
+  color: var(--mid);
+  border-color: var(--mid);
+}
+
+.contact-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-self: end;
+}
+
+.contact-links li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--rule);
+}
+
+.contact-links a {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mid);
+  transition: color 0.2s;
+}
+
+.contact-links a:hover { color: var(--black); }
+
+.contact-links .arrow {
+  font-size: 0.7rem;
+  color: var(--mid);
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  padding: var(--space-md);
+  border-top: 1px solid var(--rule);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .copy {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+}
+
+footer .tagline {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+}
+
+/* =========================================
+   PAGE-LOAD ANIMATION
+   ========================================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation: fadeUp 0.7s ease forwards;
+  opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.25s; }
+.delay-3 { animation-delay: 0.4s; }
+.delay-4 { animation-delay: 0.55s; }
+.delay-5 { animation-delay: 0.7s; }
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+  .hero-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-meta-item:last-child {
+    display: none;
+  }
+
+  .statement {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .project-item {
+    grid-template-columns: 2rem 1fr;
+    gap: var(--space-sm);
+  }
+
+  .project-meta {
+    display: none;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  nav { padding: var(--space-sm); }
+
+  .hero-index { display: none; }
+}
+
+@media (max-width: 480px) {
+  .nav-links { display: none; }
+  
+  .hero {
+    padding: 7rem var(--space-sm) var(--space-lg);
+  }
+
+  .hero-headline {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+}

@@ -1,0 +1,13 @@
+baseURL = "https://faridbouchdak.com"
+languageCode = "nl"
+title = "Farid Bouchdak"
+theme = ""
+
+[params]
+  description = "Ik bouw infrastructuur. Fysiek en digitaal."
+  author = "Farid Bouchdak"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
