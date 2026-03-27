@@ -755,3 +755,220 @@ footer .tagline {
     font-size: clamp(1.75rem, 11vw, 2.5rem);
   }
 }
+
+/* =========================================
+   POSTS — blogoverzicht & artikel
+   ========================================= */
+
+/* Lijst */
+.posts-index {
+  padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  max-width: 860px;
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--space-md);
+}
+
+.posts-header-right {
+  display: flex;
+  gap: var(--space-md);
+  align-items: baseline;
+}
+
+.post-back {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  transition: color 0.2s;
+}
+
+.post-back:hover { color: var(--black); }
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.posts-item {
+  display: grid;
+  grid-template-columns: 6rem 1fr auto;
+  gap: var(--space-md);
+  align-items: baseline;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--rule);
+  color: var(--black);
+  transition: color 0.15s;
+}
+
+.posts-item:hover .posts-item-title {
+  transform: translateX(6px);
+}
+
+.posts-item-date {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+  font-variant-numeric: tabular-nums;
+}
+
+.posts-item-title {
+  font-family: var(--font-display);
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  transition: transform 0.2s ease;
+}
+
+.posts-item-arrow {
+  font-size: 0.75rem;
+  color: var(--mid);
+}
+
+/* Artikel */
+.post {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-md) var(--space-xl);
+}
+
+.post-header {
+  margin-bottom: var(--space-lg);
+}
+
+.post-meta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+}
+
+.post-date {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+}
+
+.post-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-sm);
+}
+
+.post-description {
+  font-size: 0.9rem;
+  color: var(--mid);
+  line-height: 1.6;
+  margin-bottom: var(--space-md);
+}
+
+.post-rule {
+  height: 1px;
+  background: var(--rule);
+}
+
+/* Post body typografie */
+.post-body {
+  margin: var(--space-lg) 0;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: #1a1a1a;
+}
+
+.post-body p {
+  margin-bottom: 1.5rem;
+}
+
+.post-body h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin: var(--space-lg) 0 var(--space-sm);
+  line-height: 1.2;
+}
+
+.post-body strong {
+  font-weight: 500;
+  color: var(--black);
+}
+
+.post-body em {
+  font-style: italic;
+}
+
+.post-body hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: var(--space-lg) 0;
+}
+
+/* Post footer */
+.post-footer {
+  margin-top: var(--space-lg);
+}
+
+.post-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-md);
+}
+
+.post-lang-switch {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mid);
+  transition: color 0.2s;
+}
+
+.post-lang-switch:hover { color: var(--black); }
+
+/* Responsive posts */
+@media (max-width: 768px) {
+  .post {
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+  }
+
+  .posts-index {
+    padding: var(--space-xl) var(--space-md) var(--space-lg);
+  }
+
+  .posts-item {
+    grid-template-columns: 5rem 1fr auto;
+    gap: var(--space-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .post {
+    padding: var(--space-xl) 1rem var(--space-lg);
+  }
+
+  .posts-index {
+    padding: var(--space-xl) 1rem var(--space-lg);
+  }
+
+  .posts-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .posts-item-arrow { display: none; }
+
+  .post-footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+}

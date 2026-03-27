@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="post">
+
+  <header class="post-header">
+    <div class="post-meta-top">
+      <a href="/posts/" class="post-back">← Notities</a>
+      <span class="post-date">{{ .Date.Format "02.01.2006" }}</span>
+    </div>
+    <h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-description">{{ .Description }}</p>
+    <div class="post-rule"></div>
+  </header>
+
+  <div class="post-body">
+    {{ .Content }}
+  </div>
+
+  <footer class="post-footer">
+    <div class="post-rule"></div>
+    <div class="post-footer-inner">
+      <a href="/posts/" class="post-back">← Alle notities</a>
+      <a href="/en{{ .RelPermalink }}" class="post-lang-switch">Read in English →</a>
+    </div>
+  </footer>
+
+</article>
+{{ end }}

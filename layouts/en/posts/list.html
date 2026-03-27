@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="posts-index">
+
+  <div class="posts-header">
+    <div class="posts-header-left">
+      <a href="/en/" class="post-back">← Home</a>
+    </div>
+    <div class="posts-header-right">
+      <span class="section-label">Notes</span>
+      <span class="section-count">{{ len .Pages | printf "%02d" }}</span>
+    </div>
+  </div>
+
+  <div class="posts-list">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="posts-item">
+      <span class="posts-item-date">{{ .Date.Format "01.02.06" }}</span>
+      <span class="posts-item-title">{{ .Title }}</span>
+      <span class="posts-item-arrow">→</span>
+    </a>
+    {{ end }}
+  </div>
+
+</section>
+{{ end }}
