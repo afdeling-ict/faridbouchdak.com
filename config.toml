@@ -1,7 +1,6 @@
 baseURL = "https://faridbouchdak.com"
 languageCode = "nl"
 title = "Farid Bouchdak"
-theme = ""
 
 [params]
   description = "Ik bouw infrastructuur. Fysiek en digitaal."
