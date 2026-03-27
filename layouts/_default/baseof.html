@@ -5,41 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="{{ .Site.Params.description }}" />
   <meta name="author" content="{{ .Site.Params.author }}" />
-
-  <!-- OG / Social -->
   <meta property="og:title" content="{{ .Site.Title }}" />
   <meta property="og:description" content="{{ .Site.Params.description }}" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="{{ .Site.BaseURL }}" />
-
-  <!-- Canonical -->
   <link rel="canonical" href="{{ .Site.BaseURL }}" />
-
-  <!-- Favicon (inline SVG) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>FB</text></svg>" />
-
-  <!-- Google Fonts -->
+  <link rel="icon" href="/img/fb-logo.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="/css/main.css" />
-
   <title>{{ .Site.Title }} — {{ .Site.Params.description }}</title>
 </head>
 <body>
-
   {{ partial "nav.html" . }}
-
   <main>
     {{ block "main" . }}{{ end }}
   </main>
-
   {{ partial "footer.html" . }}
-
   <script>
-    // Intersection observer for scroll animations
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
