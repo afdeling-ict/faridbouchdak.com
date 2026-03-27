@@ -52,8 +52,7 @@ faridbouchdak/
 │   ├── posts/
 │   │   ├── list.html                      # Blogoverzicht NL + EN (één template, i18n)
 │   │   └── single.html                   # Artikelpagina NL + EN (één template, i18n + .Translations)
-│   ├── en/
-│   │   └── list.html                      # Homepage EN (standalone HTML)
+│   ├── index.en.html                      # Homepage EN (standalone HTML, Hugo multilingual lookup)
 │   └── partials/
 │       ├── nav.html                       # Nav NL + EN (één partial, taaldetectie + .Translations)
 │       ├── footer.html                    # Footer NL + EN (i18n tagline)
