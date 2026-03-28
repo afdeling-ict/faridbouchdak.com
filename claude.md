@@ -59,7 +59,10 @@ faridbouchdak/
 │       └── scripts.html                   # Scroll + animatie JS
 └── static/
     ├── css/main.css
-    └── img/fb-logo.png
+    ├── img/
+    │   └── social-preview.png             # OG/Twitter Card preview (1200×630)
+    ├── robots.txt                         # Crawler instructies incl. AI bots
+    └── llms.txt                           # LLM/AI crawler optimization
 ```
 
 ---
@@ -73,6 +76,17 @@ faridbouchdak/
 - **Animaties:** fadeUp bij page load, scroll-reveal via IntersectionObserver
 - **Nav:** fixed, blur-on-scroll (`backdrop-filter`) na 20px scrollen
 - **Responsive:** breakpoints op 1024px, 768px, 480px, 360px — volledig uitgewerkt
+
+## SEO / GEO / AI-optimalisatie
+
+- **hreflang:** aanwezig op alle pagina's — NL/EN + x-default
+- **Schema.org JSON-LD:** `Person` op homepages, `Article` op postpagina's
+- **Open Graph:** title, description, type, url, locale, image (1200×630)
+- **Twitter Card:** `summary_large_image` op alle pagina's
+- **robots.txt:** `/static/robots.txt` — AI bots expliciet toegestaan
+- **llms.txt:** `/static/llms.txt` — machine-readable siteoverzicht voor LLMs
+- **Sitemap:** Hugo genereert automatisch `/sitemap.xml` bij elke build
+- **Social preview:** `/static/img/social-preview.png` — vervangen door eigen afbeelding indien gewenst
 
 ---
 
