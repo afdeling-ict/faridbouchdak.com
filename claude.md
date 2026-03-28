@@ -61,6 +61,7 @@ faridbouchdak/
     ├── css/main.css
     ├── img/
     │   └── social-preview.png             # OG/Twitter Card preview (1200×630)
+    ├── _headers                           # Cloudflare Pages HTTP security headers (HSTS, CSP, COOP, X-Frame)
     ├── robots.txt                         # Crawler instructies incl. AI bots
     └── llms.txt                           # LLM/AI crawler optimization
 ```

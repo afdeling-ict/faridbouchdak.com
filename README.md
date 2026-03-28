@@ -63,6 +63,7 @@ faridbouchdak/
     ├── css/main.css
     ├── img/
     │   └── social-preview.png   # OG/Twitter Card image (1200×630)
+    ├── _headers                 # Cloudflare Pages security headers (HSTS, CSP, COOP, X-Frame)
     ├── robots.txt
     └── llms.txt
 ```
