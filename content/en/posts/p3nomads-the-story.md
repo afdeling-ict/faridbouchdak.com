@@ -2,18 +2,18 @@
 title: "P3nomads: how the idea began"
 date: 2026-03-28
 translationKey: "p3nomads-story"
-description: "P3nomads started at ministerial level — in Sri Lanka and Vietnam, alongside Obbe and Jan, as part of Taskforce Infra. Here's the story."
+description: "P3nomads started at ministerial level — in Sri Lanka and Vietnam, alongside Obbe and Jan, as part of Taskforce Finance IWC. Here's the story."
 ---
 
 It didn't start with a business plan. It started with a question from a ministry.
 
-Through Taskforce Infra — a collaboration at ministerial level — I was asked, together with Obbe and Jan, to transfer PPP knowledge to governments abroad. Not as a course, not through a handbook. But by standing alongside the project teams that actually had to tender a major infrastructure project.
+Through Taskforce Finance IWC — a collaboration at ministerial level — I was asked, together with Obbe and Jan, to transfer PPP knowledge to governments abroad. Not as a course, not through a handbook. But by standing alongside the project teams that actually had to tender a major infrastructure project.
 
 First destination: Sri Lanka. Then Vietnam.
 
 What those missions made immediately clear was that the strength came from the combination. Obbe brings deep expertise in procurement and legal tendering. Jan covers operational execution and contract management. I work from strategic PPP and policy experience. None of us could have covered that entire spectrum alone. Together, we can. That's the foundation of the 1+1=3 effect P3nomads is built on.
 
-![On location in Sri Lanka during the first Taskforce Infra mission](/img/p3nomads-1.jpg)
+![On location in Sri Lanka during the first Taskforce Finance IWC mission](/img/p3nomads-1.jpg)
 *The first missions were exploratory — but the pattern was immediately clear.*
 
 ## What we do

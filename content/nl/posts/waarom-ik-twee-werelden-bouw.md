@@ -24,7 +24,7 @@ Dat is ook wat een goed digitaal product doet.
 
 Je bouwt een systeem. Je structureert de logica. En als het goed is, werkt het terwijl jij slaapt.
 
-De materialen zijn anders — beton versus code, aanbestedingsprocedures versus productontwerp — maar de onderliggende logica is identiek: **systemen bouwen die zichzelf dragen.**
+De materialen zijn anders — beton of asfalt versus code, aanbestedingsprocedures versus productontwerp — maar de onderliggende logica is identiek: **systemen bouwen die zichzelf dragen.**
 
 ---
 
@@ -56,10 +56,10 @@ Die wisselwerking is geen toeval. Ik cultiveer hem actief.
 
 Mensen vragen me soms: "Maar wat ben je nou eigenlijk?"
 
-Adviseur. Founder. Bouwheer. Dat soort antwoorden.
+Adviseur. Oprichter. Bouwer. Dat soort antwoorden.
 
 Het echte antwoord is simpeler: ik bouw infrastructuur. De aard van het materiaal is bijzaak.
 
-Fysiek of digitaal — het gaat altijd om hetzelfde: iets neerzetten wat waarde levert zonder constante aandacht. Iets wat schaalbaar is. Iets wat anderen kunnen gebruiken, lang nadat jij er iets anders mee bezig bent.
+Fysiek of digitaal — het gaat altijd om hetzelfde: iets neerzetten wat waarde levert zonder constante aandacht. Iets wat schaalbaar is. Iets wat anderen kunnen gebruiken, lange tijd nadat jij weer aan iets anders bent begonnen.
 
 Dat is wat mij drijft. Aan beide kanten van het scherm.

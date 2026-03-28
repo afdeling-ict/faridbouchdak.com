@@ -2,18 +2,18 @@
 title: "P3nomads: hoe het idee ontstond"
 date: 2026-03-28
 translationKey: "p3nomads-story"
-description: "P3nomads begon op ministerieel niveau — in Sri Lanka en Vietnam, samen met Obbe en Jan, als onderdeel van Taskforce Infra. Hier is het verhaal."
+description: "P3nomads begon op ministerieel niveau — in Sri Lanka en Vietnam, samen met Obbe en Jan, als onderdeel van Taskforce Financiering IWC. Hier is het verhaal."
 ---
 
 Het begon niet met een businessplan. Het begon met een vraag van een ministerie.
 
-Via Taskforce Infra — een samenwerkingsverband op ministerieel niveau — werd ik samen met Obbe en Jan gevraagd om PPP-kennis over te dragen aan overheden in het buitenland. Niet in de vorm van een cursus, niet met een handboek. Maar door naast de projectteams te gaan staan die daadwerkelijk een groot infrastructuurproject moesten aanbesteden.
+Via Taskforce Financiering IWC — een samenwerkingsverband op ministerieel niveau — werd ik samen met Obbe en Jan gevraagd om PPP-kennis over te dragen aan overheden in het buitenland. Niet in de vorm van een cursus, niet met een handboek. Maar door naast de projectteams te gaan staan die daadwerkelijk een groot infrastructuurproject moesten aanbesteden.
 
 Eerste bestemming: Sri Lanka. Daarna Vietnam.
 
-Wat die samenwerking direct duidelijk maakte, was dat de kracht zat in de combinatie. Obbe brengt diepgaande kennis mee van inkoop en juridische aanbestedingen. Jan heeft de operationele uitvoering en contractbeheer. Ik werk vanuit strategische PPP- en beleidservaring. Geen van ons had dat gehele spectrum alleen kunnen bestrijken. Samen wel. Dat is de basis van het 1+1=3-effect waar P3Nomads op gebouwd is.
+Wat die samenwerking direct duidelijk maakte, was dat de kracht zat in de combinatie. Obbe brengt diepgaande kennis mee van inkoop en juridische aanbestedingen. Jan heeft de operationele uitvoering en contractbeheer. Ik werk vanuit strategische PPP- en beleidservaring. Geen van ons had dat gehele spectrum alleen kunnen bestrijken. Samen wel. Dat is de basis van het 1+1=3-effect waar P3nomads op gebouwd is.
 
-![Op locatie in Sri Lanka tijdens de eerste Taskforce Infra-missie](/img/p3nomads-1.jpg)
+![Op locatie in Sri Lanka tijdens de eerste Taskforce Financiering IWC-missie](/img/p3nomads-1.jpg)
 *De eerste missies waren verkennend — maar het patroon was meteen duidelijk.*
 
 ## Wat we doen
