@@ -20,10 +20,12 @@ Dit is een persoonlijk merkproject voor Farid Bouchdak. De centrale positionerin
 |---|---|
 | `/` | Homepage NL |
 | `/posts/` | Blogoverzicht NL |
-| `/posts/waarom-ik-twee-werelden-bouw/` | Eerste post NL |
+| `/posts/waarom-ik-twee-werelden-bouw/` | Post 1 NL — translationKey: "two-worlds" |
+| `/posts/p3nomads-het-verhaal/` | Post 2 NL — translationKey: "p3nomads-story" |
 | `/en/` | Homepage EN |
 | `/en/posts/` | Blogoverzicht EN |
-| `/en/posts/why-i-build-in-two-worlds/` | Eerste post EN |
+| `/en/posts/why-i-build-in-two-worlds/` | Post 1 EN — translationKey: "two-worlds" |
+| `/en/posts/p3nomads-the-story/` | Post 2 EN — translationKey: "p3nomads-story" |
 
 ---
 
@@ -39,11 +41,13 @@ faridbouchdak/
 │   ├── nl/                                # contentDir voor NL (default taal)
 │   │   ├── _index.md
 │   │   └── posts/
-│   │       └── waarom-ik-twee-werelden-bouw.md   # translationKey: "two-worlds"
+│   │       ├── waarom-ik-twee-werelden-bouw.md   # translationKey: "two-worlds"
+│   │       └── p3nomads-het-verhaal.md           # translationKey: "p3nomads-story"
 │   └── en/                                # contentDir voor EN
 │       ├── _index.md
 │       └── posts/
-│           └── why-i-build-in-two-worlds.md      # translationKey: "two-worlds"
+│           ├── why-i-build-in-two-worlds.md      # translationKey: "two-worlds"
+│           └── p3nomads-the-story.md             # translationKey: "p3nomads-story"
 ├── layouts/
 │   ├── index.html                         # Homepage NL template
 │   ├── _default/
@@ -114,11 +118,8 @@ faridbouchdak/
 
 ## Openstaande taken
 
-1. **Volgende blogpost** schrijven — `content/nl/posts/` + `content/en/posts/`, zelfde `translationKey`
-2. **Homepage updaten** met "Notities" sectie of recente post preview
-3. **stickynotes.club** — domein correct ingesteld op de site
-4. **askfoundersanything.com** beslissing nemen: bouwen of verkopen
-5. **p3nomads.com** prijsstrategie doorvoeren
+1. **askfoundersanything.com** beslissing nemen: bouwen (Claude API integreren) óf verkopen als domein
+2. **p3nomads.com** prijsstrategie doorvoeren — prijs verhogen naar €750-950, in-company variant toevoegen (€4.500-6.500)
 
 ---
 
