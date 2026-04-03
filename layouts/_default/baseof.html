@@ -34,7 +34,7 @@
   {{ range .AllTranslations }}
   <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" />
   {{ end }}
-  {{ $defaultPage := index (where .AllTranslations "Language.Lang" .Site.DefaultContentLanguage) 0 }}
+  {{ $defaultPage := index (where .AllTranslations "Language.Lang" "nl") 0 }}
   {{ if $defaultPage }}
   <link rel="alternate" hreflang="x-default" href="{{ $defaultPage.Permalink }}" />
   {{ else }}
